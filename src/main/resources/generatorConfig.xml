@@ -33,8 +33,10 @@
         <!--指定生成mapper.xml的路径-->
         <sqlMapGenerator targetPackage="com.weiwu.mall.mbg.mapper" targetProject="src/main/resources"/>
         <!--指定生成mapper接口的的路径-->
+        <!--生成Dao类存放位置-->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.weiwu.mall.mbg.mapper"
                              targetProject="src/main/java"/>
+        <!--生成对应表及类名-->
         <!--生成全部表tableName设为%-->
         <table tableName="pms_brand">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
